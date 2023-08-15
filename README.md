@@ -1,4 +1,7 @@
 存在bug，且至少使用40g显存才能训练
+在训练开始时，确保data中的json文件中列出的训练和验证数据存在，编号为1-60；确认sam模型的checkpoint存在，需要
+使用以下指令运行
+python train.py -net sam -mod sam_adpt -exp_name msa-3d-sam-btcv -sam_ckpt ./checkpoint/sam/sam_vit_b_01ec64.pth -image_size 1024 -dataset decathlon -thd True -chunk 3 -data_path ./data -b 1 -dim 64 -num_sample 1 -mlp_dim 128 -val_freq 2
 
 
 -----------------------------------------------------
