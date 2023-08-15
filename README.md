@@ -1,3 +1,7 @@
+存在bug，且至少使用40g显存才能训练
+
+
+-----------------------------------------------------
 # Medical-SAM-Adapter
 
 Medical SAM Adapter, or say MSA, is a project to fineturn [SAM](https://github.com/facebookresearch/segment-anything) using [Adaption](https://lightning.ai/pages/community/tutorial/lora-llm/) for the Medical Imaging.
